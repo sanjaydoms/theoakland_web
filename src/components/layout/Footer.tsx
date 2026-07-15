@@ -7,6 +7,7 @@ import {
   ArrowRightIcon } from
 'lucide-react';
 import { BRAND } from '../../data/siteData';
+import logo from '../../assets/images/logo.png';
 const COLS = [
 {
   title: 'Company',
@@ -79,10 +80,7 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-20 pb-10">
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <span className="font-serif text-3xl">Oakland</span>
-            <span className="block text-[10px] uppercase tracking-[0.35em] text-terracotta mt-1 mb-6">
-              {'interios\n'}
-            </span>
+            <img src={logo} alt="The Oakland" className="h-24 w-auto object-contain mb-6" />
             <p className="text-bone/60 max-w-xs leading-relaxed mb-6 text-sm">
               {BRAND.description} Join our newsletter for studio notes and new
               collections.
