@@ -11,6 +11,7 @@ import {
 'lucide-react';
 import { BRAND, IMAGES } from '../../data/siteData';
 import logo from '../../assets/images/logo.png';
+import logoWhite from '../../assets/images/logo-white.png';
 interface NavItem {
   label: string;
   to: string;
@@ -89,7 +90,7 @@ export function Header() {
             
             {/* {'The Oakland '} */}
            <img
-              src={logo}
+              src={solid ? logo : logoWhite}
               alt="The Oakland"
               className="h-24 w-auto object-contain"
             />
