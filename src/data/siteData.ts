@@ -1,6 +1,6 @@
 export const BRAND = {
-  name: 'Shrutham — Oakland',
-  shortName: 'Shrutham',
+  name: 'theoak land',
+  shortName: 'theoak land',
   location: 'Oakland',
   descriptor: 'Oakland',
   socialHandle: '@Oakland',
