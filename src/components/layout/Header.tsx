@@ -10,6 +10,7 @@ import {
   ChevronDownIcon } from
 'lucide-react';
 import { BRAND, IMAGES } from '../../data/siteData';
+import logo from '../../assets/images/logo.png';
 interface NavItem {
   label: string;
   to: string;
@@ -88,10 +89,10 @@ export function Header() {
             
             {/* {'The Oakland '} */}
            <img
-              src="/src/assets/images/logo.png"
+              src={logo}
               alt="The Oakland"
               className="h-24 w-auto object-contain"
-/>
+            />
           </span>
         </Link>
         <nav
