@@ -9,11 +9,12 @@ export const BRAND = {
 };
 
 export const CONTACT = {
-  address: '2401 Broadway, Suite 210, Oakland, CA 94612',
+  address: 'theoakland prism mall',
+  addressLink: 'https://maps.app.goo.gl/nE6qFn7CDSUUPRn47',
   phone: '+1 (510) 555-0184',
-  email: 'hello@shruthamoakland.com',
+  email: 'customercare@theoakland.in',
   mapEmbedUrl:
-  'https://www.openstreetmap.org/export/embed.html?bbox=-122.278%2C37.800%2C-122.258%2C37.817&layer=mapnik&marker=37.808%2C-122.268'
+  'https://maps.google.com/maps?q=theoakland+prism+mall+gachibowli&t=&z=15&ie=UTF8&iwloc=&output=embed'
 };
 
 export const IMAGES = {

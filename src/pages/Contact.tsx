@@ -47,7 +47,8 @@ export function Contact() {
   const details = [
   {
     icon: MapPinIcon,
-    label: CONTACT.address
+    label: CONTACT.address,
+    link: CONTACT.addressLink
   },
   {
     icon: PhoneIcon,
@@ -55,7 +56,8 @@ export function Contact() {
   },
   {
     icon: MailIcon,
-    label: CONTACT.email
+    label: CONTACT.email,
+    link: `mailto:${CONTACT.email}`
   }];
 
   return (
@@ -80,7 +82,13 @@ export function Contact() {
                 className="w-5 h-5 text-terracotta mt-1 shrink-0"
                 strokeWidth={1.5} />
               
-                <span className="text-ink">{detail.label}</span>
+                {detail.link ? (
+                  <a href={detail.link} target="_blank" rel="noopener noreferrer" className="text-ink hover:text-terracotta transition-colors underline decoration-dotted">
+                    {detail.label}
+                  </a>
+                ) : (
+                  <span className="text-ink">{detail.label}</span>
+                )}
               </li>
             )}
           </ul>
