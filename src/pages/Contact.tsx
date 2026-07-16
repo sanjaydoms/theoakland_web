@@ -14,7 +14,7 @@ const FAQS = [
 {
   question: 'How does the design process begin?',
   answer:
-  'It starts with a complimentary Oakland studio consultation where we understand your space, budget and vision.'
+  'It starts with a complimentary The Oakland studio consultation where we understand your space, budget and vision.'
 },
 {
   question: 'Do you handle end-to-end execution?',
@@ -24,7 +24,7 @@ const FAQS = [
 {
   question: 'Which areas do you serve?',
   answer:
-  'We work throughout Oakland, the East Bay, San Francisco and the wider Bay Area.'
+  'We work throughout India.'
 },
 {
   question: 'What is your typical project timeline?',
@@ -63,10 +63,10 @@ export function Contact() {
   return (
     <div>
       <PageHero
-        eyebrow="Get in Touch · Oakland"
+        eyebrow="Get in Touch · The Oakland"
         title="Let's Start a Conversation"
         image={IMAGES.studio}
-        imageAlt="Shrutham Oakland design studio with material samples" />
+        imageAlt="The Oakland design studio with material samples" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 grid lg:grid-cols-2 gap-16">
         <div>
@@ -94,7 +94,7 @@ export function Contact() {
           </ul>
           <div className="mt-8 aspect-[16/10] overflow-hidden bg-bone-deep">
             <iframe
-              title="Shrutham Oakland studio location"
+              title="The Oakland studio location"
               className="w-full h-full grayscale"
               loading="lazy"
               src={CONTACT.mapEmbedUrl} />
