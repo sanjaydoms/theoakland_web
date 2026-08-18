@@ -1,0 +1,61 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --bone: #f5f1ea;
+  --bone-deep: #ece5da;
+  --ink: #2a2620;
+  --ink-soft: #57514741;
+  --taupe: #8a7d6b;
+  --terracotta: #b0725a;
+  --brass: #b08968;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: var(--bone);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+.wood-canvas {
+  background-color: var(--bone);
+  background-image:
+    linear-gradient(rgba(245, 241, 234, 0.56), rgba(245, 241, 234, 0.56)),
+    url('https://cdn.magicpatterns.com/patterns/generated-images/482b7d49-e5bb-4d44-b050-7d4520027f22.jpg');
+  background-size: auto, min(1100px, 115vw) auto;
+  background-position: center, left bottom;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
+}
+.font-serif-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+::selection {
+  background: var(--terracotta);
+  color: #fff;
+}
+/* Hide scrollbar for horizontal sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Marquee for brand partners */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
