@@ -74,7 +74,7 @@ export function Contact() {
         <div>
           <SectionHeading
             eyebrow="Visit Us"
-            title="Contact Us"
+            title="THE OAKLAND"
             className="mb-8" />
           
           <ul className="space-y-6">
