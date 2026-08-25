@@ -9,7 +9,7 @@ export const BRAND = {
 };
 
 export const CONTACT = {
-  address: 'theoakland prism mall',
+  address: 'The oakland, Prism mall',
   addressLink: 'https://maps.app.goo.gl/nE6qFn7CDSUUPRn47',
   phones: ['+91 9666604356', '+91 9703335683'],
   email: 'customercare@theoakland.in',
