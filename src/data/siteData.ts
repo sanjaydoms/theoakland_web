@@ -11,7 +11,7 @@ export const BRAND = {
 export const CONTACT = {
   address: 'theoakland prism mall',
   addressLink: 'https://maps.app.goo.gl/nE6qFn7CDSUUPRn47',
-  phones: ['+91 966604356', '+91 9703335683'],
+  phones: ['+91 9666604356', '+91 9703335683'],
   email: 'customercare@theoakland.in',
   mapEmbedUrl:
   'https://maps.google.com/maps?q=theoakland+prism+mall+gachibowli&t=&z=15&ie=UTF8&iwloc=&output=embed'
