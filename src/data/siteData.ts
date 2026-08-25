@@ -1,11 +1,11 @@
 export const BRAND = {
-  name: 'theoak land',
-  shortName: 'theoak land',
+  name: 'the oakland',
+  shortName: 'the oakland',
   location: 'Oakland',
   descriptor: 'Oakland',
   socialHandle: '@Oakland',
   description:
-  'A Bay Area interior design studio crafting enduring, tactile spaces for how you live now.'
+  'Interior design studio crafting enduring, tactile spaces for how you live now.'
 };
 
 export const CONTACT = {
