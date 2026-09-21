@@ -20,7 +20,7 @@ export function Hero() {
         
         <img
           src={IMAGES.hero}
-          alt="Oakland Hills living room with oak trees and Bay Area views"
+          alt="Warm contemporary living room with natural light"
           className="w-full h-full object-cover" />
         
       </motion.div>
@@ -46,7 +46,7 @@ export function Hero() {
           }}
           className="text-white/80 text-xs uppercase tracking-[0.4em] mb-6">
           
-          {' Oakland'}
+          {'The Oakland · Hyderabad'}
         </motion.span>
         <motion.h1
           initial={{
@@ -64,7 +64,7 @@ export function Hero() {
           }}
           className="font-serif text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] max-w-4xl">
           
-          Crafting Timeless Spaces for Bay Area Living
+          Crafting Timeless Spaces for Modern Living
         </motion.h1>
         <motion.div
           initial={{

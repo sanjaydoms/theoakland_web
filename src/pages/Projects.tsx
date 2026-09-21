@@ -23,10 +23,10 @@ export function Projects() {
   return (
     <div>
       <PageHero
-        eyebrow="Portfolio · Bay Area"
+        eyebrow="Portfolio · The Oakland"
         title="Our Signature Projects"
         image={IMAGES.hillsideProject}
-        imageAlt="Oakland Hills residence overlooking the Bay" />
+        imageAlt="Contemporary residence with open-plan living" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-16">
         <div className="flex flex-wrap gap-3 mb-12">

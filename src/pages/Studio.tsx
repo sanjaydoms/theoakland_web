@@ -16,7 +16,7 @@ const SERVICES = [
   icon: CalendarIcon,
   title: 'Design Consultation',
   description:
-  'A one-on-one session to understand your Oakland home, taste and aspirations.'
+  'A one-on-one session to understand your home, taste and aspirations.'
 },
 {
   icon: UsersIcon,
@@ -33,7 +33,7 @@ const SERVICES = [
   icon: LayersIcon,
   title: 'Material Selection',
   description:
-  'Explore our curated Oakland material library, hands-on and guided.'
+  'Explore our curated material library, hands-on and guided.'
 },
 {
   icon: ScanIcon,
@@ -46,11 +46,11 @@ export function Studio() {
   return (
     <div>
       <PageHero
-        eyebrow="Design Studio · Oakland"
+        eyebrow="Design Studio · The Oakland"
         title="Your Vision, Expertly Realised"
         subtitle="A guided, end-to-end design experience from first idea to final styling."
         image={IMAGES.studio}
-        imageAlt="Shrutham Oakland design studio and material library" />
+        imageAlt="The Oakland design studio and material library" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24">
         <SectionHeading
@@ -96,7 +96,7 @@ export function Studio() {
           <div>
             <h3 className="font-serif text-3xl md:text-4xl">Ready to begin?</h3>
             <p className="text-bone/60 mt-2">
-              Book a complimentary consultation with our Oakland design team.
+              Book a complimentary consultation with our Hyderabad design team.
             </p>
           </div>
           <Link

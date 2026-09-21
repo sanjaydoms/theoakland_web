@@ -185,7 +185,7 @@ export function Header() {
               <Link to="/products" className="group relative overflow-hidden">
                 <img
                 src={IMAGES.collection}
-                alt="California modern living room from the Shrutham collection"
+                alt="Contemporary living room from The Oakland collection"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               
                 <div className="absolute inset-0 bg-ink/30 flex flex-col justify-end p-6">

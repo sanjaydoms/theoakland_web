@@ -8,11 +8,11 @@ export function Products() {
   return (
     <div>
       <PageHero
-        eyebrow="Product Range · Oakland"
+        eyebrow="Product Range · The Oakland"
         title="Discover Premium Interior Collections"
         subtitle="Every category is designed as a complete system — curated to work beautifully together."
         image={IMAGES.collection}
-        imageAlt="California modern Oakland living room with sculptural furniture" />
+        imageAlt="Contemporary living room with sculptural furniture" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24">
         <div className="grid gap-6 md:grid-cols-2">

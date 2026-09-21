@@ -7,7 +7,7 @@ const PILLARS = [
 {
   title: 'Vision',
   description:
-  'To make the Bay Area’s everyday spaces feel more personal, grounded and enduring.'
+  'To make everyday spaces feel more personal, grounded and enduring.'
 },
 {
   title: 'Mission',
@@ -24,10 +24,10 @@ export function About() {
   return (
     <div>
       <PageHero
-        eyebrow="Our Story · Oakland"
+        eyebrow="Our Story · The Oakland"
         title="Designing Spaces That Endure"
         image={IMAGES.studio}
-        imageAlt="Shrutham Oakland studio with material samples and design tools" />
+        imageAlt="The Oakland studio with material samples and design tools" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 grid md:grid-cols-3 gap-10">
         {PILLARS.map((pillar, i) =>
@@ -46,7 +46,7 @@ export function About() {
           <div className="relative aspect-[4/5] overflow-hidden">
             <img
               src={IMAGES.founder}
-              alt="Asha Shrutham, founder and principal designer"
+              alt="Founder and principal designer of The Oakland"
               className="w-full h-full object-cover" />
             
           </div>
@@ -56,8 +56,8 @@ export function About() {
               title="A Life in Design" />
             
             <p className="text-taupe mt-6 leading-relaxed">
-              After two decades shaping Bay Area homes and workplaces, Asha
-              Shrutham founded her Oakland studio on a simple belief: great
+              After years shaping homes and workplaces across India, our
+              founder built The Oakland in Hyderabad on a simple belief: great
               design is felt, not just seen.
             </p>
             <p className="text-taupe mt-4 leading-relaxed">
@@ -66,7 +66,7 @@ export function About() {
               listening, honest materials, and relentless attention to detail.
             </p>
             <p className="mt-6 font-serif text-xl text-ink">
-              — Asha Shrutham, Founder & Principal Designer
+              — Founder & Principal Designer, The Oakland
             </p>
           </div>
         </div>

@@ -1,9 +1,9 @@
 export const BRAND = {
   name: 'the oakland',
   shortName: 'the oakland',
-  location: 'Oakland',
-  descriptor: 'Oakland',
-  socialHandle: '@Oakland',
+  location: 'Hyderabad',
+  descriptor: 'Hyderabad',
+  socialHandle: '@theoakland',
   description:
   'Interior design studio crafting enduring, tactile spaces for how you live now.'
 };
@@ -86,7 +86,7 @@ export const CATEGORIES: Category[] = [
   slug: 'furniture',
   blurb: 'Sculptural pieces built to last generations.',
   image: IMAGES.furniture,
-  alt: 'Sculptural lounge chair and curved sofa in an Oakland loft'
+  alt: 'Sculptural lounge chair and curved sofa in a contemporary living room'
 },
 {
   name: 'Furnishings',
@@ -100,7 +100,7 @@ export const CATEGORIES: Category[] = [
   slug: 'flooring',
   blurb: 'Warm oak, stone and engineered surfaces.',
   image: IMAGES.flooring,
-  alt: 'Oak flooring meeting honed limestone in a California home'
+  alt: 'Oak flooring meeting honed limestone in a modern home'
 },
 {
   name: 'Lighting',
@@ -121,7 +121,7 @@ export const CATEGORIES: Category[] = [
   slug: 'modular-kitchen',
   blurb: 'Considered, functional culinary spaces.',
   image: IMAGES.kitchen,
-  alt: 'Oak and stone Oakland kitchen'
+  alt: 'Oak and stone modular kitchen'
 },
 {
   name: 'Wardrobes',
@@ -154,7 +154,7 @@ export const WHY_US = [
 },
 {
   title: 'Local Partnership',
-  desc: 'An Oakland studio team that stays closely involved from first conversation to handover.'
+  desc: 'A Hyderabad studio team that stays closely involved from first conversation to handover.'
 },
 {
   title: 'Lasting Support',
@@ -164,10 +164,10 @@ export const WHY_US = [
 
 export const COLLECTIONS = [
 {
-  name: 'California Modern',
+  name: 'Contemporary Modern',
   desc: 'Sculptural forms, soft daylight and honest materials.',
   image: IMAGES.collection,
-  alt: 'California modern Oakland living room'
+  alt: 'Contemporary modern living room'
 },
 {
   name: 'Warm Minimal',
@@ -176,28 +176,28 @@ export const COLLECTIONS = [
   alt: 'Warm textured furnishing details'
 },
 {
-  name: 'Oakland Entertaining',
+  name: 'Elegant Entertaining',
   desc: 'Easy gatherings, thoughtfully composed.',
   image: IMAGES.dining,
-  alt: 'Oakland dining room with stone table and oak chairs'
+  alt: 'Dining room with stone table and oak chairs'
 },
 {
   name: 'Creative Workspace',
   desc: 'Workplaces designed to inspire focus and exchange.',
   image: IMAGES.workspaceProject,
-  alt: 'Oakland creative office with timber worktables'
+  alt: 'Creative office with timber worktables'
 },
 {
   name: 'Restful Retreat',
   desc: 'Private rooms made for restoration.',
   image: IMAGES.bedroom,
-  alt: 'Tranquil Oakland primary bedroom'
+  alt: 'Tranquil primary bedroom'
 },
 {
-  name: 'Hillside Living',
-  desc: 'Spaces that open to the Bay and the landscape.',
+  name: 'Open Living',
+  desc: 'Spaces that open to light, air and the landscape.',
   image: IMAGES.hillsideProject,
-  alt: 'Hillside Oakland residence with Bay view'
+  alt: 'Open-plan residence with garden views'
 }];
 
 
@@ -206,21 +206,21 @@ export const PROJECTS = [
   type: 'Residential',
   title: 'Redwood House',
   image: IMAGES.hillsideProject,
-  alt: 'Redwood House, a hillside Oakland residence',
+  alt: 'Redwood House, a contemporary Hyderabad residence',
   filter: 'Villa'
 },
 {
   type: 'Apartment',
   title: 'Lakeshore Residence',
   image: IMAGES.lakeshoreProject,
-  alt: 'Lakeshore Residence living room in Oakland',
+  alt: 'Lakeshore Residence living room',
   filter: 'Apartment'
 },
 {
   type: 'Office',
-  title: 'Oakland Creative Co.',
+  title: 'Creative Co. Workspace',
   image: IMAGES.workspaceProject,
-  alt: 'Oakland Creative Co. workplace interior',
+  alt: 'Creative Co. workplace interior',
   filter: 'Office'
 },
 {
@@ -252,22 +252,22 @@ export const SOLUTIONS = [
 {
   name: 'Residential',
   image: IMAGES.hillsideProject,
-  alt: 'Sunlit Oakland residential interior with Bay views'
+  alt: 'Sunlit residential interior with garden views'
 },
 {
   name: 'Commercial',
   image: IMAGES.project,
-  alt: 'Contemporary commercial interior in Oakland'
+  alt: 'Contemporary commercial interior'
 },
 {
   name: 'Hospitality',
   image: IMAGES.hospitalityProject,
-  alt: 'Boutique hospitality lounge in Oakland'
+  alt: 'Boutique hospitality lounge'
 },
 {
   name: 'Office Interiors',
   image: IMAGES.workspaceProject,
-  alt: 'Thoughtful Oakland creative workplace'
+  alt: 'Thoughtful creative workplace'
 },
 {
   name: 'Retail',
@@ -275,9 +275,9 @@ export const SOLUTIONS = [
   alt: 'Gallery-like retail interior with art and walnut detailing'
 },
 {
-  name: 'Hillside Homes',
+  name: 'Villas',
   image: IMAGES.lakeshoreProject,
-  alt: 'Refined Oakland apartment living space'
+  alt: 'Refined villa living space'
 }];
 
 
@@ -310,7 +310,7 @@ export const MATERIALS = [
 {
   name: 'Tailored Upholstery',
   image: IMAGES.furniture,
-  alt: 'Tailored boucle seating in a California loft'
+  alt: 'Tailored boucle seating in a modern loft'
 },
 {
   name: 'Veined Stone',
@@ -342,9 +342,9 @@ export const PROCESS = [
 export const TESTIMONIALS = [
 {
   quote:
-  'Shrutham gave us a home that feels grounded in Oakland, yet completely our own. Every detail earns its place.',
+  'The Oakland gave us a home that feels grounded, yet completely our own. Every detail earns its place.',
   name: 'Maya & Daniel Brooks',
-  role: 'Redwood House, Oakland Hills',
+  role: 'Redwood House, Hyderabad',
   image: IMAGES.hillsideProject,
   alt: 'Redwood House client project'
 },
@@ -352,7 +352,7 @@ export const TESTIMONIALS = [
   quote:
   'The process was calm, clear and exceptionally well considered. Our Lakeshore home finally feels like it has a point of view.',
   name: 'Elena Park',
-  role: 'Lakeshore Residence, Oakland',
+  role: 'Lakeshore Residence, Hyderabad',
   image: IMAGES.lakeshoreProject,
   alt: 'Lakeshore Residence client project'
 },
@@ -360,15 +360,15 @@ export const TESTIMONIALS = [
   quote:
   'They translated our culture into a workplace people genuinely want to be in.',
   name: 'Jordan Lewis',
-  role: 'Oakland Creative Co.',
+  role: 'Creative Co. Workspace',
   image: IMAGES.workspaceProject,
-  alt: 'Oakland Creative Co. client project'
+  alt: 'Creative Co. client project'
 }];
 
 
 export const STATS = [
-{ value: '180+', label: 'Bay Area Projects' },
-{ value: '15+', label: 'Years in Oakland' },
+{ value: '180+', label: 'Projects Completed' },
+{ value: '15+', label: 'Years of Experience' },
 { value: '60+', label: 'Craft Partners' },
 { value: '98%', label: 'Client Referrals' }];
 
@@ -377,22 +377,22 @@ export const TEAM = [
 {
   role: 'Designers',
   image: IMAGES.teamDesigner,
-  alt: 'Shrutham Oakland interior designer in the studio'
+  alt: 'The Oakland interior designer in the studio'
 },
 {
   role: 'Architects',
   image: IMAGES.teamArchitect,
-  alt: 'Shrutham Oakland architect holding project drawings'
+  alt: 'The Oakland architect holding project drawings'
 },
 {
   role: 'Project Leads',
   image: IMAGES.founder,
-  alt: 'Shrutham Oakland founder in the material library'
+  alt: 'The Oakland founder in the material library'
 },
 {
   role: 'Studio Team',
   image: IMAGES.studio,
-  alt: 'Shrutham Oakland design studio materials table'
+  alt: 'The Oakland design studio materials table'
 }];
 
 
@@ -401,7 +401,7 @@ export const RESOURCE_GUIDES = [
   title: 'Interior Trends 2026',
   tag: 'Trends',
   image: IMAGES.trends,
-  alt: 'California modern interior trends with sculptural seating'
+  alt: 'Contemporary interior trends with sculptural seating'
 },
 {
   title: 'The Complete Materials Guide',
@@ -413,7 +413,7 @@ export const RESOURCE_GUIDES = [
   title: 'Building a Cohesive Colour Story',
   tag: 'Colour',
   image: IMAGES.colour,
-  alt: 'Warm Oakland interior color palette'
+  alt: 'Warm interior colour palette'
 },
 {
   title: 'Caring for Natural Finishes',
@@ -426,14 +426,14 @@ export const RESOURCE_GUIDES = [
 export const INSTAGRAM_POSTS: ImageItem[] = [
 {
   image: IMAGES.furniture,
-  alt: 'Sculptural seating in a California modern loft'
+  alt: 'Sculptural seating in a contemporary loft'
 },
 { image: IMAGES.kitchen, alt: 'Oak and stone kitchen detail' },
-{ image: IMAGES.dining, alt: 'Warm contemporary Oakland dining room' },
+{ image: IMAGES.dining, alt: 'Warm contemporary dining room' },
 { image: IMAGES.material, alt: 'Tactile material palette' },
-{ image: IMAGES.bedroom, alt: 'Softly layered Oakland bedroom' },
+{ image: IMAGES.bedroom, alt: 'Softly layered bedroom' },
 { image: IMAGES.wallDecor, alt: 'Gallery-like art wall and walnut console' },
-{ image: IMAGES.hillsideProject, alt: 'Oakland Hills home with Bay view' },
+{ image: IMAGES.hillsideProject, alt: 'Villa living room with garden view' },
 { image: IMAGES.hospitalityProject, alt: 'Moody hospitality lounge' },
 { image: IMAGES.accessories, alt: 'Curated objects on a travertine table' }];
 

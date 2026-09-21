@@ -7,7 +7,7 @@ import { IMAGES, MATERIALS } from '../data/siteData';
 const GALLERY = [
 {
   image: IMAGES.hillsideProject,
-  alt: 'Open-plan Redwood House with Bay view'
+  alt: 'Open-plan Redwood House living area'
 },
 {
   image: IMAGES.dining,
@@ -34,17 +34,17 @@ export function ProjectDetail() {
   return (
     <div>
       <PageHero
-        eyebrow="Oakland Hills · Residential"
+        eyebrow="Hyderabad · Residential"
         title="Redwood House"
         image={IMAGES.hillsideProject}
-        imageAlt="Redwood House, a warm Oakland Hills home with a Bay view" />
+        imageAlt="Redwood House, a warm contemporary Hyderabad home" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 grid lg:grid-cols-3 gap-12">
         {[
         {
           title: 'The Challenge',
           description:
-          'A hillside home with extraordinary Bay views, but disconnected rooms that kept the landscape at a distance.'
+          'A spacious home with generous natural light, but disconnected rooms that kept the family apart.'
         },
         {
           title: 'The Solution',
@@ -54,7 +54,7 @@ export function ProjectDetail() {
         {
           title: 'The Outcome',
           description:
-          'A serene family home that feels grounded in its Oakland setting — tactile, generous and made for everyday gathering.'
+          'A serene family home that feels grounded in its setting — tactile, generous and made for everyday gathering.'
         }].
         map((block, i) =>
         <Reveal key={block.title} delay={i * 0.1}>
@@ -128,10 +128,10 @@ export function ProjectDetail() {
             strokeWidth={1} />
           
           <p className="font-serif text-3xl text-ink leading-snug">
-            Shrutham gave us a home that feels like us — only more beautiful
+            The Oakland gave us a home that feels like us — only more beautiful
             than we imagined.
           </p>
-          <p className="mt-6 text-taupe">The Brooks Family, Oakland Hills</p>
+          <p className="mt-6 text-taupe">The Brooks Family, Hyderabad</p>
         </div>
       </section>
     </div>);

@@ -5,7 +5,7 @@ import { PageHero } from '../components/ui/PageHero';
 import { SectionHeading } from '../components/ui/Section';
 import { IMAGES, RESOURCE_GUIDES } from '../data/siteData';
 const DOWNLOADS = [
-'Oakland Lookbook 2026',
+'The Oakland Lookbook 2026',
 'Product Catalogue',
 'Studio Brochure'];
 
@@ -13,10 +13,10 @@ export function Resources() {
   return (
     <div>
       <PageHero
-        eyebrow="Resources · Oakland"
+        eyebrow="Resources · The Oakland"
         title="Insights & Inspiration"
         image={IMAGES.trends}
-        imageAlt="California modern living room with sculptural furniture and natural light" />
+        imageAlt="Contemporary living room with sculptural furniture and natural light" />
       
       <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24">
         <SectionHeading

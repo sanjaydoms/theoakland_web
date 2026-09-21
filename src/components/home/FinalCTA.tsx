@@ -8,7 +8,7 @@ export function FinalCTA() {
     <section className="relative overflow-hidden">
       <img
         src={IMAGES.hillsideProject}
-        alt="Oakland Hills residence opening onto the Bay"
+        alt="Contemporary residence opening onto the garden"
         className="absolute inset-0 w-full h-full object-cover" />
       
       <div className="absolute inset-0 bg-ink/70" />
@@ -31,7 +31,7 @@ export function FinalCTA() {
           }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl text-bone leading-[1.05]">
           
-          Let&apos;s Design Your Oakland Home
+          Let&apos;s Design Your Dream Home
         </motion.h2>
         <motion.div
           initial={{
