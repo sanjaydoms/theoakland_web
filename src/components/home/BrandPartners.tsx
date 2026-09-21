@@ -5,7 +5,7 @@ export function BrandPartners() {
   return (
     <section className="py-16 border-y border-ink/10 overflow-hidden">
       <p className="text-center text-xs uppercase tracking-[0.3em] text-taupe mb-10">
-        Trusted Brand Partners
+        Our Global Partners
       </p>
       <div className="relative">
         <div className="flex w-max animate-marquee gap-16">

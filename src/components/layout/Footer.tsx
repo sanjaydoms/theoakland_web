@@ -82,8 +82,8 @@ export function Footer() {
           <div>
             <img src={logo} alt="The Oakland" className="h-24 w-auto object-contain mb-6" />
             <p className="text-bone/60 max-w-xs leading-relaxed mb-6 text-sm">
-              {BRAND.description} Join our newsletter for studio notes and new
-              collections.
+              {BRAND.tagline}. {BRAND.description} Join our newsletter for
+              studio notes and new collections.
             </p>
             <form
               onSubmit={(event) => {

@@ -8,10 +8,10 @@ export function Categories() {
   return (
     <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 md:py-32">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-        <SectionHeading eyebrow="Browse" title="Product Categories" />
+        <SectionHeading eyebrow="Categories We Cater" title="Product Categories" />
         <p className="text-taupe max-w-sm md:text-right">
-          Everything you need to compose a complete, considered interior —
-          organised by category.
+          From statement furniture to refined décor and lighting, crafted to
+          suit every space and purpose.
         </p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

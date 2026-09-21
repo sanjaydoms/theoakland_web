@@ -20,7 +20,7 @@ export function Hero() {
         
         <img
           src={IMAGES.hero}
-          alt="Warm contemporary living room with natural light"
+          alt="Warm contemporary living room furnished by The Oakland"
           className="w-full h-full object-cover" />
         
       </motion.div>
@@ -46,7 +46,7 @@ export function Hero() {
           }}
           className="text-white/80 text-xs uppercase tracking-[0.4em] mb-6">
           
-          {'The Oakland · Hyderabad'}
+          {BRAND.verticals.join(' · ')}
         </motion.span>
         <motion.h1
           initial={{
@@ -64,7 +64,7 @@ export function Hero() {
           }}
           className="font-serif text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] max-w-4xl">
           
-          Crafting Timeless Spaces for Modern Living
+          Elevating Spaces, Exceeding Expectations
         </motion.h1>
         <motion.div
           initial={{

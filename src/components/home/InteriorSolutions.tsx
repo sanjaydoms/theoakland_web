@@ -34,10 +34,10 @@ export function InteriorSolutions() {
         </div>
         <div className="order-1 lg:order-2">
           <span className="block text-xs uppercase tracking-[0.3em] text-terracotta mb-4">
-            What We Do
+            Under One Roof
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-ink mb-8">
-            Interior Solutions
+            Complete Home Solutions
           </h2>
           <ul className="divide-y divide-ink/10 border-t border-ink/10">
             {SOLUTIONS.map((item, i) =>

@@ -19,16 +19,16 @@ interface NavItem {
 }
 const MEGA_FURNITURE = [
 {
-  title: 'By Room',
-  links: ['Living', 'Bedroom', 'Dining', 'Office', 'Outdoor']
+  title: 'Furniture',
+  links: ['Home Furniture', 'Office Furniture', 'Hospitality Furniture', 'Rugs & Upholstery']
 },
 {
-  title: 'By Type',
-  links: ['Sofas', 'Beds', 'Tables', 'Seating', 'Storage']
+  title: 'Kitchens & Interiors',
+  links: ['Modular Kitchens', 'Wardrobes', 'Lighting Solutions', 'Automation']
 },
 {
-  title: 'Curated',
-  links: ['New Arrivals', 'Best Sellers', 'Made to Order', 'Limited Edition']
+  title: 'Projects',
+  links: ['Design & Build', 'Commercial Projects']
 }];
 
 const NAV: NavItem[] = [
@@ -185,15 +185,15 @@ export function Header() {
               <Link to="/products" className="group relative overflow-hidden">
                 <img
                 src={IMAGES.collection}
-                alt="Contemporary living room from The Oakland collection"
+                alt="Contemporary living room furnished by The Oakland"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               
                 <div className="absolute inset-0 bg-ink/30 flex flex-col justify-end p-6">
                   <span className="text-white/80 text-[10px] uppercase tracking-[0.25em]">
-                    Featured Collection
+                    Premium Home Solutions
                   </span>
                   <span className="text-white font-serif text-2xl">
-                    Shop Now →
+                    Explore →
                   </span>
                 </div>
               </Link>

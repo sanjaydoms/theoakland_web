@@ -1,11 +1,13 @@
 export const BRAND = {
-  name: 'the oakland',
-  shortName: 'the oakland',
+  name: 'The Oakland',
+  shortName: 'The Oakland',
   location: 'Hyderabad',
   descriptor: 'Hyderabad',
   socialHandle: '@theoakland',
+  tagline: 'Elevating spaces, exceeding expectations',
+  verticals: ['Furniture', 'Modular Kitchens', 'Design & Build', 'Commercial Projects'],
   description:
-  'Interior design studio crafting enduring, tactile spaces for how you live now.'
+  'A premium home solutions company bringing together furniture, modular kitchens, design & build and commercial solutions under one roof.'
 };
 
 export const CONTACT = {
@@ -82,83 +84,79 @@ export interface Category extends ImageItem {
 
 export const CATEGORIES: Category[] = [
 {
-  name: 'Furniture',
-  slug: 'furniture',
-  blurb: 'Sculptural pieces built to last generations.',
+  name: 'Home Furniture',
+  slug: 'home-furniture',
+  blurb: 'Statement pieces for living, dining and bedrooms.',
   image: IMAGES.furniture,
-  alt: 'Sculptural lounge chair and curved sofa in a contemporary living room'
+  alt: 'Sculptural sofa and lounge chair in a contemporary living room'
 },
 {
-  name: 'Furnishings',
-  slug: 'furnishings',
-  blurb: 'Textiles, throws and soft layers.',
-  image: IMAGES.furnishings,
-  alt: 'Layered linen, wool and ceramic home furnishings'
+  name: 'Office Furniture',
+  slug: 'office-furniture',
+  blurb: 'Workstations, seating and storage built for focus.',
+  image: IMAGES.workspaceProject,
+  alt: 'Modern office interior with timber worktables'
 },
 {
-  name: 'Flooring',
-  slug: 'flooring',
-  blurb: 'Warm oak, stone and engineered surfaces.',
-  image: IMAGES.flooring,
-  alt: 'Oak flooring meeting honed limestone in a modern home'
+  name: 'Hospitality Furniture',
+  slug: 'hospitality-furniture',
+  blurb: 'Durable, refined pieces for hotels and restaurants.',
+  image: IMAGES.hospitalityProject,
+  alt: 'Boutique hospitality lounge seating'
 },
 {
-  name: 'Lighting',
-  slug: 'lighting',
+  name: 'Commercial Projects',
+  slug: 'commercial-projects',
+  blurb: 'End-to-end fit-outs for offices, retail and more.',
+  image: IMAGES.project,
+  alt: 'Contemporary commercial interior'
+},
+{
+  name: 'Lighting Solutions',
+  slug: 'lighting-solutions',
   blurb: 'Ambient, task and statement fixtures.',
   image: IMAGES.lighting,
-  alt: 'Sculptural pendant above a stone dining table'
+  alt: 'Sculptural pendant lights above a dining table'
 },
 {
-  name: 'Wall Decor',
-  slug: 'wall-decor',
-  blurb: 'Art, mirrors and textured finishes.',
-  image: IMAGES.wallDecor,
-  alt: 'Abstract art and sculptural objects in a refined living room'
+  name: 'Automation',
+  slug: 'automation',
+  blurb: 'Smart lighting, climate and security, made simple.',
+  image: IMAGES.accessories,
+  alt: 'Home automation panel in a modern living room'
 },
 {
-  name: 'Modular Kitchen',
-  slug: 'modular-kitchen',
-  blurb: 'Considered, functional culinary spaces.',
+  name: 'Kitchen & Wardrobes',
+  slug: 'kitchen-wardrobes',
+  blurb: 'Modular kitchens and bespoke storage.',
   image: IMAGES.kitchen,
   alt: 'Oak and stone modular kitchen'
 },
 {
-  name: 'Wardrobes',
-  slug: 'wardrobes',
-  blurb: 'Bespoke storage, beautifully concealed.',
-  image: IMAGES.wardrobe,
-  alt: 'Custom walnut wardrobe wall with integrated lighting'
-},
-{
-  name: 'Accessories',
-  slug: 'accessories',
-  blurb: 'The finishing details that matter.',
-  image: IMAGES.accessories,
-  alt: 'Sculptural interior accessories on a stone table'
+  name: 'Rugs & Upholstery',
+  slug: 'rugs-upholstery',
+  blurb: 'Textiles, rugs and soft layers.',
+  image: IMAGES.furnishings,
+  alt: 'Layered rugs and upholstery fabrics'
 }];
 
 
 export const WHY_US = [
 {
-  title: 'Premium Materials',
-  desc: 'Natural, tactile finishes sourced for beauty and lasting performance.'
+  title: 'Thoughtful Design',
+  desc: 'Every decision begins with purpose.'
 },
 {
-  title: 'Tailored Design',
-  desc: 'Every space is shaped around your routines, architecture and point of view.'
+  title: 'Premium Brands',
+  desc: 'Access to globally recognised brands.'
 },
 {
-  title: 'Thoughtful Execution',
-  desc: 'Clear coordination and skilled craft carry the vision through to installation.'
+  title: 'Attention to Detail',
+  desc: 'Precision in every element.'
 },
 {
-  title: 'Local Partnership',
-  desc: 'A Hyderabad studio team that stays closely involved from first conversation to handover.'
-},
-{
-  title: 'Lasting Support',
-  desc: 'We remain a trusted resource for your space long after the finishing touches.'
+  title: 'End-to-End Execution',
+  desc: 'From initial concept to finished space.'
 }];
 
 
@@ -250,34 +248,24 @@ export const PROJECT_TYPES = PROJECTS.map((project) => project.type);
 
 export const SOLUTIONS = [
 {
-  name: 'Residential',
+  name: 'Furniture',
+  image: IMAGES.furniture,
+  alt: 'Premium home furniture in a contemporary living room'
+},
+{
+  name: 'Modular Kitchens',
+  image: IMAGES.kitchen,
+  alt: 'Modular kitchen with oak cabinetry and stone counters'
+},
+{
+  name: 'Design & Build',
   image: IMAGES.hillsideProject,
-  alt: 'Sunlit residential interior with garden views'
+  alt: 'Fully designed and built residential interior'
 },
 {
-  name: 'Commercial',
+  name: 'Commercial Projects',
   image: IMAGES.project,
-  alt: 'Contemporary commercial interior'
-},
-{
-  name: 'Hospitality',
-  image: IMAGES.hospitalityProject,
-  alt: 'Boutique hospitality lounge'
-},
-{
-  name: 'Office Interiors',
-  image: IMAGES.workspaceProject,
-  alt: 'Thoughtful creative workplace'
-},
-{
-  name: 'Retail',
-  image: IMAGES.wallDecor,
-  alt: 'Gallery-like retail interior with art and walnut detailing'
-},
-{
-  name: 'Villas',
-  image: IMAGES.lakeshoreProject,
-  alt: 'Refined villa living space'
+  alt: 'Commercial interior fit-out'
 }];
 
 
@@ -367,32 +355,76 @@ export const TESTIMONIALS = [
 
 
 export const STATS = [
-{ value: '180+', label: 'Projects Completed' },
-{ value: '15+', label: 'Years of Experience' },
-{ value: '60+', label: 'Craft Partners' },
-{ value: '98%', label: 'Client Referrals' }];
+{ value: '35+', label: 'Years of Leadership' },
+{ value: '20+', label: 'Global Brand Partners' },
+{ value: '4', label: 'Verticals Under One Roof' },
+{ value: '1', label: 'Destination in Gachibowli' }];
 
 
 export const TEAM = [
 {
-  role: 'Designers',
-  image: IMAGES.teamDesigner,
-  alt: 'The Oakland interior designer in the studio'
+  name: 'Balaji Tammineedi',
+  role: 'Founder & Visionary',
+  image: '/team/balaji-tammineedi.jpg',
+  alt: 'Balaji Tammineedi, Founder of The Oakland',
+  bio: [
+  'With over 35 years of experience in business leadership and entrepreneurship, Mr. Balaji Tammineedi brings to The Oakland a unique blend of entrepreneurial vision, cross-industry expertise and strong relationships.',
+  'Based in Hyderabad, his entrepreneurial journey spans construction, real estate, premium retail, food and dairy, shaped by an innovative approach to product development and market growth. For the past 15 years his focus has been on construction and real estate, where he has played a key role in developing premium residential and commercial destinations.',
+  'Built on the belief that a home should reflect its owner\'s personality and way of life, The Oakland brings together world-class brands, thoughtful design and complete home solutions under one destination. His vision is to build The Oakland as a destination defined by trust, design, quality and lasting customer relationships — bringing the world\'s finest home brands closer to discerning customers.']
+
 },
 {
-  role: 'Architects',
-  image: IMAGES.teamArchitect,
-  alt: 'The Oakland architect holding project drawings'
+  name: 'Raju Madhapuram',
+  role: 'Co-Founder',
+  image: '/team/raju-madhapuram.jpg',
+  alt: 'Raju Madhapuram, Co-Founder of The Oakland',
+  bio: [
+  'With over 22 years of experience in furniture retail, Mr. Raju Madhapuram brings extensive industry knowledge and a proven track record in sales, customer service and retail operations.',
+  'His career has given him a deep understanding of customer preferences, product selection, market dynamics and the expectations of premium consumers. Known for his strong sales performance and customer relationship skills, he has consistently focused on delivering personalised service and seamless buying experiences.',
+  'As Co-Founder, he plays a key role in shaping retail strategy and customer experience. His vision is to create a premium destination built on expert guidance, personalised attention and lasting customer relationships.']
+
 },
 {
-  role: 'Project Leads',
-  image: IMAGES.founder,
-  alt: 'The Oakland founder in the material library'
+  name: 'Gangadhar Rao Javvaji',
+  role: 'Co-Founder',
+  image: '/team/gangadhar-rao-javvaji.jpg',
+  alt: 'Gangadhar Rao Javvaji, Co-Founder of The Oakland',
+  bio: [
+  'With over 22 years of experience across retail, interiors and food retail, Mr. Gangadhar Rao Javvaji brings a strong combination of industry expertise, entrepreneurial vision and experience working with global and reputed brands.',
+  'His career has given him a deep understanding of premium retail, customer expectations, brand positioning and the evolving needs of discerning consumers. He is bringing together his extensive retail experience and passion for design to create a differentiated destination for high-quality furniture and complete interior solutions.',
+  'His vision is to build a brand defined by quality, design, trust and exceptional customer experience, while bringing global standards and premium solutions closer to customers.']
+
+}];
+
+export const VISION =
+'To redefine modern living through premium, innovative, and complete home solutions.';
+export const MISSION =
+'To deliver thoughtfully designed furniture, kitchens, and spaces with quality, craftsmanship, and exceptional service.';
+
+export const VALUES = [
+{
+  title: 'Integrity & Transparency',
+  desc: 'We believe in doing business with complete honesty and transparency. We keep our commitments, communicate clearly and build relationships based on trust.'
 },
 {
-  role: 'Studio Team',
-  image: IMAGES.studio,
-  alt: 'The Oakland design studio materials table'
+  title: 'Customer First',
+  desc: 'Every decision begins with the customer. We strive to understand their needs, preferences and aspirations and deliver solutions that exceed expectations.'
+},
+{
+  title: 'World-Class Quality',
+  desc: 'We are committed to offering exceptional furniture, materials, craftsmanship and interior solutions that meet global standards of quality and excellence.'
+},
+{
+  title: 'Excellence in Service',
+  desc: 'Our relationship with the customer goes beyond the sale. We provide personalised guidance, attention to detail and seamless service throughout the entire journey.'
+},
+{
+  title: 'Design & Innovation',
+  desc: 'We continuously seek inspiring designs, innovative solutions and global trends to create interiors that are distinctive, functional and timeless.'
+},
+{
+  title: 'Long-Term Relationships',
+  desc: 'We measure our success not only by what we sell, but by the relationships we build. We aim to earn the trust of customers, architects, designers and partners for the long term.'
 }];
 
 
@@ -413,11 +445,24 @@ export const INSTAGRAM_POSTS: ImageItem[] = [
 
 
 export const BRANDS = [
-'VITRA',
-'MUUTO',
-'HAY',
-'MENU',
-'GUBI',
-'FLOS',
-'FERM LIVING',
-'CARL HANSEN & SØN'];
+'Nobilia',
+'Liebherr',
+'Siemens',
+'Miele',
+'Gaggenau',
+'Bosch',
+'Salice',
+'Häfele',
+'Blum',
+'Kesseböhmer',
+"Campo de' Fiori",
+'Homestolife',
+'ICA Italian Wood Finishes',
+'Corian',
+'DuPont',
+'Sealy',
+'Hettich',
+'Italia Glass Mosaic',
+'HHY',
+'Eleganté',
+'Bowers & Wilkins'];

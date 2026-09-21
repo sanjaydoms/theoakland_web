@@ -9,8 +9,8 @@ export function Products() {
     <div>
       <PageHero
         eyebrow="Product Range · The Oakland"
-        title="Discover Premium Interior Collections"
-        subtitle="Every category is designed as a complete system — curated to work beautifully together."
+        title="Categories We Cater"
+        subtitle="From statement furniture to refined décor and lighting, crafted to suit every space and purpose."
         image={IMAGES.collection}
         imageAlt="Contemporary living room with sculptural furniture" />
       

@@ -1,25 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {
-  GemIcon,
-  PenToolIcon,
-  WrenchIcon,
-  LifeBuoyIcon,
-  ShieldCheckIcon } from
-'lucide-react';
+import { PenToolIcon, GlobeIcon, SearchIcon, LayersIcon } from 'lucide-react';
 import { WHY_US } from '../../data/siteData';
 import { SectionHeading } from '../ui/Section';
-const ICONS = [GemIcon, PenToolIcon, WrenchIcon, LifeBuoyIcon, ShieldCheckIcon];
+const ICONS = [PenToolIcon, GlobeIcon, SearchIcon, LayersIcon];
 export function WhyChooseUs() {
   return (
     <section className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 md:py-32">
       <SectionHeading
-        eyebrow="Our Promise"
-        title="Why Choose Us"
+        eyebrow="Because your space deserves more than ordinary"
+        title="Why The Oakland"
         align="center"
         className="mb-16 max-w-2xl" />
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-ink/10 border border-ink/10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-ink/10 border border-ink/10">
         {WHY_US.map((item, i) => {
           const Icon = ICONS[i];
           return (

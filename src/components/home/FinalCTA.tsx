@@ -31,7 +31,7 @@ export function FinalCTA() {
           }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl text-bone leading-[1.05]">
           
-          Let&apos;s Design Your Dream Home
+          Let&apos;s Create Your Space.
         </motion.h2>
         <motion.div
           initial={{
@@ -50,6 +50,7 @@ export function FinalCTA() {
             delay: 0.2
           }}
           className="mt-10">
+          <p className="text-bone/60 text-xs uppercase tracking-[0.3em] mb-8">Your space. Your story.</p>
           
           <Link
             to="/contact"
