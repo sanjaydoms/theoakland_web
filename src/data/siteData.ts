@@ -396,32 +396,6 @@ export const TEAM = [
 }];
 
 
-export const RESOURCE_GUIDES = [
-{
-  title: 'Interior Trends 2026',
-  tag: 'Trends',
-  image: IMAGES.trends,
-  alt: 'Contemporary interior trends with sculptural seating'
-},
-{
-  title: 'The Complete Materials Guide',
-  tag: 'Materials',
-  image: IMAGES.material,
-  alt: 'Natural stone, oak and textile material palette'
-},
-{
-  title: 'Building a Cohesive Colour Story',
-  tag: 'Colour',
-  image: IMAGES.colour,
-  alt: 'Warm interior colour palette'
-},
-{
-  title: 'Caring for Natural Finishes',
-  tag: 'Maintenance',
-  image: IMAGES.flooring,
-  alt: 'Natural oak and stone interior finishes'
-}];
-
 
 export const INSTAGRAM_POSTS: ImageItem[] = [
 {

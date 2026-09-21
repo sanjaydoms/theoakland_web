@@ -11,6 +11,7 @@ import { Projects } from './pages/Projects';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { Studio } from './pages/Studio';
 import { Resources } from './pages/Resources';
+import { ResourceDetail } from './pages/ResourceDetail';
 import { Contact } from './pages/Contact';
 export function App() {
   return (
@@ -27,6 +28,7 @@ export function App() {
             <Route path="/projects/detail" element={<ProjectDetail />} />
             <Route path="/studio" element={<Studio />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/:slug" element={<ResourceDetail />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
