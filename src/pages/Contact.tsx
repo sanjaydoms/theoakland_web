@@ -10,6 +10,8 @@ import {
 import { PageHero } from '../components/ui/PageHero';
 import { SectionHeading } from '../components/ui/Section';
 import { CONTACT, IMAGES } from '../data/siteData';
+// The ERP turns each enquiry into a lead (Settings → Website enquiries there decides who gets it).
+const ENQUIRY_URL = `${import.meta.env.VITE_ERP_URL ?? 'https://erp.theoakland.in'}/api/leads/website`;
 const FAQS = [
 {
   question: 'How does the design process begin?',
@@ -34,16 +36,46 @@ const FAQS = [
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
   const [open, setOpen] = useState<number | null>(0);
   const [form, setForm] = useState({
     name: '',
     email: '',
     mobile: '',
-    message: ''
+    message: '',
+    // Hidden field people never see; spam robots fill it in and the ERP then ignores the enquiry.
+    website: ''
   });
-  const submit = (event: React.FormEvent) => {
+  const submit = async (event: React.FormEvent) => {
     event.preventDefault();
-    setSent(true);
+    setSending(true);
+    setError('');
+    try {
+      const response = await fetch(ENQUIRY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.mobile,
+          email: form.email,
+          message: form.message,
+          website: form.website,
+          page: window.location.href.split('?')[0]
+        })
+      });
+      const result = await response.json().catch(() => null);
+      if (response.ok) {
+        setSent(true);
+        return;
+      }
+      const problems = Object.values(result?.errors ?? {}).flat().join(' ');
+      setError(problems || result?.message || 'Sorry, your enquiry was not sent.');
+    } catch {
+      setError('Sorry, your enquiry was not sent.');
+    } finally {
+      setSending(false);
+    }
   };
   const details = [
   {
@@ -201,11 +233,34 @@ export function Contact() {
                 className="w-full bg-transparent border-b border-ink/30 py-3 focus:outline-none focus:border-terracotta transition-colors resize-none" />
               
               </div>
+              <input
+              name="website"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="hidden"
+              value={form.website}
+              onChange={(event) =>
+              setForm({
+                ...form,
+                website: event.target.value
+              })
+              } />
+            
+              {error &&
+            <p role="alert" className="text-sm text-terracotta">
+                  {error} Please try again, or call us on{' '}
+                  <a href={`tel:${CONTACT.phones[0].replace(/\s+/g, '')}`} className="underline">
+                    {CONTACT.phones[0]}
+                  </a>.
+                </p>
+            }
               <button
               type="submit"
-              className="w-full bg-ink text-bone py-4 text-xs uppercase tracking-[0.2em] hover:bg-terracotta transition-colors">
+              disabled={sending}
+              className="w-full bg-ink text-bone py-4 text-xs uppercase tracking-[0.2em] hover:bg-terracotta transition-colors disabled:opacity-60">
               
-                Send Enquiry
+                {sending ? 'Sending…' : 'Send Enquiry'}
               </button>
             </form>
           }
