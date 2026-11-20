@@ -141,7 +141,9 @@ export function Footer() {
             {[InstagramIcon, LinkedinIcon, YoutubeIcon].map((Icon, i) =>
             <a
               key={i}
-              href="#"
+              href={['https://www.instagram.com/theoaklandofficial/', '#', '#'][i]}
+              target={i === 0 ? '_blank' : undefined}
+              rel="noopener noreferrer"
               aria-label={['Instagram', 'LinkedIn', 'YouTube'][i]}
               className="text-bone/60 hover:text-terracotta transition-colors">
               
