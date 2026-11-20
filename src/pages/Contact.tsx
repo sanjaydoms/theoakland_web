@@ -44,6 +44,8 @@ export function Contact() {
     name: '',
     email: '',
     mobile: '',
+    address: '',
+    pincode: '',
     message: '',
     // Hidden field people never see; spam robots fill it in and the ERP then ignores the enquiry.
     website: ''
@@ -59,6 +61,8 @@ export function Contact() {
         body: JSON.stringify({
           name: form.name,
           phone: form.mobile,
+          address: form.address,
+          pincode: form.pincode,
           email: form.email,
           message: form.message,
           website: form.website,
@@ -213,6 +217,53 @@ export function Contact() {
                 }
                 className="w-full bg-transparent border-b border-ink/30 py-3 focus:outline-none focus:border-terracotta transition-colors" />
               
+              </div>
+              <div className="grid sm:grid-cols-3 gap-6">
+                <div className="sm:col-span-2">
+                  <label
+                  htmlFor="address"
+                  className="block text-xs uppercase tracking-[0.2em] text-taupe mb-2">
+                  
+                    Address (optional)
+                  </label>
+                  <input
+                  id="address"
+                  autoComplete="street-address"
+                  maxLength={500}
+                  value={form.address}
+                  onChange={(event) =>
+                  setForm({
+                    ...form,
+                    address: event.target.value
+                  })
+                  }
+                  className="w-full bg-transparent border-b border-ink/30 py-3 focus:outline-none focus:border-terracotta transition-colors" />
+                
+                </div>
+                <div>
+                  <label
+                  htmlFor="pincode"
+                  className="block text-xs uppercase tracking-[0.2em] text-taupe mb-2">
+                  
+                    Pincode (optional)
+                  </label>
+                  <input
+                  id="pincode"
+                  inputMode="numeric"
+                  autoComplete="postal-code"
+                  pattern="[0-9]{6}"
+                  maxLength={6}
+                  title="6-digit pincode"
+                  value={form.pincode}
+                  onChange={(event) =>
+                  setForm({
+                    ...form,
+                    pincode: event.target.value
+                  })
+                  }
+                  className="w-full bg-transparent border-b border-ink/30 py-3 focus:outline-none focus:border-terracotta transition-colors" />
+                
+                </div>
               </div>
               <div>
                 <label
