@@ -10,6 +10,7 @@ import {
 import { PageHero } from '../components/ui/PageHero';
 import { SectionHeading } from '../components/ui/Section';
 import { CONTACT, IMAGES } from '../data/siteData';
+import { enquirySource } from '../utils/enquirySource';
 // The ERP turns each enquiry into a lead (Settings → Website enquiries there decides who gets it).
 const ENQUIRY_URL = `${import.meta.env.VITE_ERP_URL ?? 'https://erp.theoakland.in'}/api/leads/website`;
 const FAQS = [
@@ -61,6 +62,7 @@ export function Contact() {
           email: form.email,
           message: form.message,
           website: form.website,
+          from: enquirySource(),
           page: window.location.href.split('?')[0]
         })
       });
