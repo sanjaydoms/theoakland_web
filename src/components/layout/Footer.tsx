@@ -77,7 +77,7 @@ export function Footer() {
   const [email, setEmail] = useState('');
   return (
     <footer className="bg-ink text-bone">
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-20 pb-10">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-20 pb-24">{/* bottom room so the floating Enquire button does not cover the social icons */}
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <img src={logo} alt="The Oakland" className="h-24 w-auto object-contain mb-6" />
